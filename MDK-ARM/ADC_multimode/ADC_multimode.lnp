@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"adc_multimode\startup_stm32f103xb.o"
+"adc_multimode\main.o"
+"adc_multimode\stm32f1xx_it.o"
+"adc_multimode\stm32f1xx_hal_msp.o"
+"adc_multimode\stm32f1xx_hal_gpio_ex.o"
+"adc_multimode\stm32f1xx_hal_adc.o"
+"adc_multimode\stm32f1xx_hal_adc_ex.o"
+"adc_multimode\stm32f1xx_hal.o"
+"adc_multimode\stm32f1xx_hal_rcc.o"
+"adc_multimode\stm32f1xx_hal_rcc_ex.o"
+"adc_multimode\stm32f1xx_hal_gpio.o"
+"adc_multimode\stm32f1xx_hal_dma.o"
+"adc_multimode\stm32f1xx_hal_cortex.o"
+"adc_multimode\stm32f1xx_hal_pwr.o"
+"adc_multimode\stm32f1xx_hal_flash.o"
+"adc_multimode\stm32f1xx_hal_flash_ex.o"
+"adc_multimode\stm32f1xx_hal_exti.o"
+"adc_multimode\stm32f1xx_hal_tim.o"
+"adc_multimode\stm32f1xx_hal_tim_ex.o"
+"adc_multimode\stm32f1xx_hal_uart.o"
+"adc_multimode\system_stm32f1xx.o"
+--strict --scatter "ADC_multimode\ADC_multimode.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC_multimode.map" -o ADC_multimode\ADC_multimode.axf
